@@ -3,6 +3,3 @@
 
 Demo
 https://koichii.github.io/javascript-tutorial/
-
-あああああああああああああああああああ
-いいいいいいいいいいいいいいいいい
