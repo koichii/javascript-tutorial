@@ -6,7 +6,7 @@ https://koichii.github.io/javascript-tutorial/
 
 ## コメント
 
-```JavaScript
+```javascript
 // 1行コメント  
 /*  
 複数行コメント  
@@ -34,7 +34,7 @@ var 関数名 = () => {...}
 ## 型
 
 ### 文字列
-```
+```javascript
 var str = "ABC";
 ```
 
