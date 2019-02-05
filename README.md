@@ -5,10 +5,13 @@ Demo
 https://koichii.github.io/javascript-tutorial/
 
 ## コメント
+
+```JavaScript
 // 1行コメント  
 /*  
 複数行コメント  
 */  
+```
 
 ## 変数
 日本語を含む Unicode 文字が使えるが推奨されない。  
