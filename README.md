@@ -24,25 +24,33 @@ obj
 $p01
 ```
 
-## 変数
+## 変数と代入
 値（または参照）の入れ物。
 ```javascript
-var i
-var $obj
-var A, B, C
+var i ;
+var $obj ;
+var A, B, C ;
+
+// 変数の定義と値の代入例
+var a = 1 ;
+var b = 2, c = 3 ;
+var d = (a + b) * c ; // c は 9
+b = a + c ; // b は 4
+b = b + 1 ; // b は 5
 ```
 
 ## 関数
-```
-function 関数名(パラメータ1, パラメータ2) {
+```javascript
+function KANSU( Param1, Param2) {
  ...
-  return 戻り値;
+  return Modorichi; // 戻り値
  }
   又は
-var 関数名 = function(パラメータ) { ... }
+var KANSU = function( Param1 ) { ... }
   又は、アロー関数
-var 関数名 = (パラメータ) => {...}
+var KANSU = ( Param1 ) => {...}
 
+// 関数の例
 function sum(p1, p2) {
   return p1 + p2;
 }
