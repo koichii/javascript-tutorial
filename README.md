@@ -20,6 +20,7 @@ https://koichii.github.io/javascript-tutorial/
 推奨は、英文字（大文字と小文字は区別される）、&#95;（アンダースコア）、$(ダラー）で始まり、英文字、&#95;、$、数字が続く単語  
 ```javascript
 A
+i
 obj
 $p01
 ```
@@ -28,15 +29,13 @@ $p01
 値（または参照）の入れ物。
 ```javascript
 var i ;
-var $obj ;
 var A, B, C ;
+var x = 10 ;
+var a = 2, A = 3 ;
 
-// 変数の定義と値の代入例
-var a = 1 ;
-var b = 2, c = 3 ;
-var d = (a + b) * c ; // c は 9
-b = a + c ; // b は 4
-b = b + 1 ; // b は 5
+x = a * A ; // x は 6
+
+x = x + 1 ; // x は 7
 ```
 
 ## 関数
