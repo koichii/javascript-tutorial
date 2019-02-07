@@ -33,7 +33,7 @@ $p01
 値（または参照）の入れ物。
 ```javascript
 var i ;
-var A, B, C ;
+var a1, a2, a3 ;
 var x = 10 ;
 var a = 2, A = 3 ;
 
