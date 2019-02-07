@@ -88,9 +88,9 @@ var obj = {str: "abc", num: 543, f: function(a, b){return a + b;} }
 
 .（ドット）または[]（ブラケット）でアクセスする
 ```javascript
-obj.str // abc
-obj["num"]　// 543
-obj.f(2, 3) // 5
+obj.str // obj の str は abc
+obj.f(2, 3) // obj の f メソッドを引数 2, 3 で呼び出すと、結果は 5
+obj["num"]　// obj の num は 543
 ```
 
 ## 値と参照
@@ -134,20 +134,21 @@ var a = {x: 1}; var b = a; b.x = 2; // a.x は 2
 ## 条件分岐
 
 ```javascript
-if (i == 10）{
+if (i == 10）{ // 「イフ」（もし）
   文
-} else {  // エルス、でなければ
+} else {  // 「エルス」（でなければ）
   文
 }
 ```
 
 ## 繰り返し
 ```javascript
-for (var i=0; i++; i<10) {
+for (var i=0; i++; i<10) { // 「フォー」（～の間）
+ ...
 }
 
 var i=0;
-while (i < 10) {
+while (i < 10) { // 「ホワイル」（～する間に）
   ...
   i++;
 }
