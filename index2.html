@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta name="description" content="JavaScript れんしゅう">
+<meta charset="UTF-8">
+<title>JavaScriptのれんしゅう</title>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+</head>
+<body style="font-size:2em">
+<h1>
+ ハローワールド
+</h1>
+
+ にゅうりょく１<input type="text" id="input1" /> <br />
+ にゅうりょく２<input type="text" id="input2" /> <br />
+ <br />
+ <button onclick="calculate();">けいさん</button>
+
+ <div id="result">
+</div>
+<script>
+// ここから JavaScript （ジャバ スクリプト）のプログラムが、はじまるよ
+// 「//」はコメント。にんげんのための文で、プログラムではないんだ。コンピュータは、ムシするよ
+//
+// ★れんしゅう１★
+// 上にかいてある  ハローワールド を、じぶんの、すきな文字にかえてみよう。
+// そのあと、下にある、みどりのボタン「Commit changes」を、おして保存しよう。
+// ウェブページを、もういちどひらくと、いま、いれた文字がひょうじされるよ。
+//
+// ★れんしゅう２★
+// がめんの「けいさん」ボタンを押すと何がでるか、ためしてみよう。
+// alert() は、がめんに、もじをポップアップで表示する、かんすうだよ。
+// そのあと、じゃまだから、「//」をあたまにつけて、コメントアウトしよう
+ 
+ // function は、「かんすう」のはじまり。「けいさん」ボタン（button）を押すと、うごきだすよ。
+ function calculate () {
+  // alertは、じゃまになったら、消してもいいよ
+  alert("うわっ！ビックリした。");
+  var text1 = $( "#input1" ).val();
+  var text2 = $( "#input2" ).val();
+  var result = text1 + text2;
+  
+// ★れんしゅう３★
+// にゅうりょく１とにゅうりょく２に、数字を入れて、「けいさん」ボタンを押すと何がでるかな？
+// たしざんをするには、「Number()」を使って、文字を、数に変えてから「+」を使うんだ。
+//  つぎの行のコメント（//）を消して、もういちどためしてみよう。
+   // result = Number( text1 ) + Number( text2 );
+  
+// ★れんしゅう４★
+// 計算や、ひょうじされる文字をかえて、プログラムがどうかわるか、ためしてみよう。
+  // たしざんは、+
+  // ひきざんは、-
+  // かけざんは、*
+  // わりざんは、/
+  // () もつかえるよ
+  
+// ★れんしゅう５★
+  // このあとのプログラムで、けっかが、10より大きかったら、文字を赤くするようにしているよ。
+  // けいさんけっかが、10より大きくなるように、けいさんして、本当かためしてみよう。
+   
+// ★れんしゅう６★
+  // すきな色に、かえてみよう。
+  // 赤は red だよ。青は blue。ピンクは pink。
+  var result_text = "";
+  if ( result > 10 ) { // もし10よりおおきかったら
+    result_text = "<b style='color:red'>" + result +"</b>";
+  } else {           // そうじゃなかったら
+    result_text = "<b>" + result + "</b>";
+  }
+
+ // ★れんしゅう７★
+  // けっかが、500より大きかったとき、色がかわるようにしてみよう。
+  // ( result > 10) のところを、( result > 500)にすれば良いよ。
+   // いろいろ、すうじをかえてみると、どうなるか、ためしてみよう。
+   
+   var html = "<div> 「" + text1 + "」と「" + text2
+    + "」をたすと「" + result_text + "」です。</div>";
+  // けっかを、ひょうじする。
+  $( "#result" ).append( html );  
+ }
+ 
+// ここでJavaScriptは、おわり
+</script>
+</body>
+</html>
